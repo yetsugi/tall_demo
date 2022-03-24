@@ -1,6 +1,6 @@
-<header class="bg-white text-gray-500 py-4 px-6 shadow">
-    <div class="flex justify-between items-center md:justify-end">
-        <button class="md:hidden hover:text-gray-800">
+<header class="bg-white text-gray-500 py-4 px-6 z-10 shadow">
+    <div class="container mx-auto flex justify-between items-center md:justify-end">
+        <button @click="sidebarOpen = ! sidebarOpen" class="md:hidden hover:text-gray-800">
             <x-heroicon-o-menu class="w-6 h-6"/>
         </button>
 

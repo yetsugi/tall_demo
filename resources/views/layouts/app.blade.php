@@ -11,11 +11,12 @@
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     </head>
     <body>
-        <div class="h-screen flex bg-gray-50">
+        <div x-data="{ sidebarOpen: false }" class="h-screen flex bg-gray-50">
             <x-sidebar />
 
             <div class="flex-1 flex flex-col">
                 <x-header />
+
                 <main class="h-full overflow-y-auto">
                     {{ $slot }}
                 </main>
