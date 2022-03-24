@@ -4,17 +4,25 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <title>Laravel</title>
+        <title>{{ config('app.name') }}</title>
 
         <livewire:styles />
         
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
-        
-        <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
     <body>
-        {{ $slot }}
+        <div class="h-screen flex bg-gray-50">
+            <x-sidebar />
+
+            <div class="flex-1 flex flex-col">
+                <x-header />
+                <main class="h-full overflow-y-auto">
+                    {{ $slot }}
+                </main>
+            </div>
+        </div>
 
         <livewire:scripts />
+        <script src="{{ mix('js/app.js') }}"></script>
     </body>
 </html>
