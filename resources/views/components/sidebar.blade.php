@@ -1,9 +1,9 @@
 <aside class="hidden w-64 shrink-0 z-20 bg-white md:block">
     <div class="mt-4">
-        <div class="text-lg font-bold text-gray-800">
+        <div class="font-['Pacifico'] text-2xl font-bold text-gray-800">
             <a href="{{ route('dashboard') }}" class="ml-6">{{ config('app.name') }}</a>
         </div>
-        <nav class="mt-5 text-sm font-semibold text-gray-500">
+        <nav class="mt-4 text-sm font-semibold text-gray-500">
             <ul>
                 <li>
                     <a href="#" class="block flex items-center px-6 py-3 hover:text-gray-800 hover:bg-gray-100">
@@ -34,10 +34,10 @@
     class="fixed inset-0 mt-16 z-20 w-64 bg-white"
 >
     <div class="mt-4">
-        <div class="text-lg font-bold text-gray-800">
+        <div class="font-['Pacifico'] text-2xl font-bold text-gray-800">
             <a href="{{ route('dashboard') }}" class="ml-6">{{ config('app.name') }}</a>
         </div>
-        <nav class="mt-5 text-sm font-semibold text-gray-500">
+        <nav class="mt-4 text-sm font-semibold text-gray-500">
             <ul>
                 <li>
                     <a href="#" class="block flex items-center px-6 py-3 hover:text-gray-800 hover:bg-gray-100">
