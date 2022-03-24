@@ -1,12 +1,12 @@
-<aside class="hidden w-64 shrink-0 z-20 bg-white md:block">
+<aside class="hidden w-64 shrink-0 z-20 bg-white md:block dark:bg-zinc-800">
     <div class="mt-4">
-        <div class="font-['Pacifico'] text-2xl font-bold text-gray-800">
+        <div class="font-['Pacifico'] text-2xl font-bold text-gray-800 dark:text-zinc-200">
             <a href="{{ route('dashboard') }}" class="ml-6">{{ config('app.name') }}</a>
         </div>
-        <nav class="mt-4 text-sm font-semibold text-gray-500">
+        <nav class="mt-4 text-sm font-semibold text-gray-500 dark:text-zinc-400">
             <ul>
                 <li>
-                    <a href="#" class="block flex items-center px-6 py-3 hover:text-gray-800 hover:bg-gray-100">
+                    <a href="#" class="block flex items-center px-6 py-3 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-zinc-200 dark:hover:bg-zinc-700">
                         <x-heroicon-o-briefcase class="w-5 h-5"/>    
                         
                         <span class="ml-4">Clients</span>
@@ -15,7 +15,7 @@
                 <li class="relative">
                     <span class="absolute inset-y-0 w-1 bg-orange-600 rounded-tr rounded-br"></span>
 
-                    <a href="{{ route('users.index') }}" class="block flex items-center px-6 py-3 text-gray-800 hover:bg-gray-100">
+                    <a href="{{ route('users.index') }}" class="block flex items-center px-6 py-3 text-gray-800 hover:bg-gray-100 dark:text-zinc-200 dark:hover:bg-zinc-700">
                         <x-heroicon-o-users class="w-5 h-5"/>    
                         
                         <span class="ml-4">Users</span>
@@ -31,16 +31,16 @@
 <aside
     x-show="sidebarOpen"
     @click.outside="sidebarOpen = false"
-    class="fixed inset-0 mt-16 z-20 w-64 bg-white"
+    class="fixed inset-0 mt-16 z-20 w-64 bg-white dark:bg-zinc-800"
 >
     <div class="mt-4">
-        <div class="font-['Pacifico'] text-2xl font-bold text-gray-800">
+        <div class="font-['Pacifico'] text-2xl font-bold text-gray-800 dark:text-zinc-200">
             <a href="{{ route('dashboard') }}" class="ml-6">{{ config('app.name') }}</a>
         </div>
-        <nav class="mt-4 text-sm font-semibold text-gray-500">
+        <nav class="mt-4 text-sm font-semibold text-gray-500 dark:text-zinc-400">
             <ul>
                 <li>
-                    <a href="#" class="block flex items-center px-6 py-3 hover:text-gray-800 hover:bg-gray-100">
+                    <a href="#" class="block flex items-center px-6 py-3 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-zinc-200 dark:hover:bg-zinc-700">
                         <x-heroicon-o-briefcase class="w-5 h-5"/>    
                         
                         <span class="ml-4">Clients</span>
@@ -49,7 +49,7 @@
                 <li class="relative">
                     <span class="absolute inset-y-0 w-1 bg-orange-600 rounded-tr rounded-br"></span>
 
-                    <a href="{{ route('users.index') }}" class="block flex items-center px-6 py-3 text-gray-800 hover:bg-gray-100">
+                    <a href="{{ route('users.index') }}" class="block flex items-center px-6 py-3 text-gray-800 hover:bg-gray-100 dark:text-zinc-200 dark:hover:bg-zinc-700">
                         <x-heroicon-o-users class="w-5 h-5"/>    
                         
                         <span class="ml-4">Users</span>
