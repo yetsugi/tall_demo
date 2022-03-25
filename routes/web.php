@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', fn () => redirect()->route('users.index'))->name('dashboard');
-Route::get('/users', Livewire\Users\Index::class)->name('users.index');
+Route::middleware(['auth'])->group(function () {
+    Route::redirect('/', '/users')->name('dashboard');
+    
+    Route::get('/users', Livewire\Users\Index::class)->name('users.index');
+});
