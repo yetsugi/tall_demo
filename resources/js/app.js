@@ -5,6 +5,8 @@ window.Alpine = Alpine
 document.addEventListener('alpine:init', () => {
     Alpine.data('app', () => ({
         sidebarOpen: false,
+
+        profileMenuOpen: false,
      
         get darkTheme() {
             if ('darkTheme' in localStorage) {
@@ -16,6 +18,8 @@ document.addEventListener('alpine:init', () => {
 
         set darkTheme(enabled) { localStorage.setItem('darkTheme', enabled) },
 
+        toggleProfileMenu() { this.profileMenuOpen = ! this.profileMenuOpen },
+        
         toggleTheme() { this.darkTheme = ! this.darkTheme }
     }))
 })

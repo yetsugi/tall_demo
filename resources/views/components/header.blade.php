@@ -15,8 +15,19 @@
                     </template>
                 </button>
             </li>
-            <li>
-                <button class="w-8 h-8 bg-gray-400 text-white rounded dark:bg-zinc-600">A</button>
+            <li class="relative">
+                <button class="w-8 h-8 bg-gray-400 text-white rounded dark:bg-zinc-600" @click="toggleProfileMenu()">A</button>
+                <x-dropdown-menu x-show="profileMenuOpen" @click.outside="profileMenuOpen = false">
+                    <li>
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                            <button type="submit" class="inline-flex items-center w-full px-2 py-1 font-semibold rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-zinc-800 dark:hover:text-zinc-100">
+                                <x-heroicon-o-logout class="w-4 h-4" />
+                                <span class="ml-4">Log out</span>
+                            </button>
+                        </form>
+                    </li>
+                </x-dropdown-menu>
             </li>
         </ul>
     </div>
