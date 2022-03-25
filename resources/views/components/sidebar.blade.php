@@ -1,8 +1,6 @@
 <aside class="hidden w-64 shrink-0 z-20 bg-white md:block dark:bg-zinc-800">
     <div class="mt-4">
-        <div class="font-['Pacifico'] text-2xl font-bold text-gray-800 dark:text-zinc-200">
-            <a href="{{ route('dashboard') }}" class="ml-6">{{ config('app.name') }}</a>
-        </div>
+        <x-logo class="text-2xl ml-6" />
         <nav class="mt-4 text-sm font-semibold text-gray-500 dark:text-zinc-400">
             <ul>
                 <li>
@@ -34,9 +32,7 @@
     class="fixed inset-0 mt-16 z-20 w-64 bg-white dark:bg-zinc-800"
 >
     <div class="mt-4">
-        <div class="font-['Pacifico'] text-2xl font-bold text-gray-800 dark:text-zinc-200">
-            <a href="{{ route('dashboard') }}" class="ml-6">{{ config('app.name') }}</a>
-        </div>
+        <x-logo class="text-2xl ml-6" />
         <nav class="mt-4 text-sm font-semibold text-gray-500 dark:text-zinc-400">
             <ul>
                 <li>
