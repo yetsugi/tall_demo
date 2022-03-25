@@ -4,7 +4,7 @@
         <nav class="mt-4 text-sm font-semibold text-gray-500 dark:text-zinc-400">
             <ul>
                 <li>
-                    <a href="#" class="block flex items-center px-6 py-3 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-zinc-200 dark:hover:bg-zinc-700">
+                    <a href="#" class="block flex items-center px-4 py-3 mx-2 rounded-md hover:text-gray-800 hover:bg-gray-100 dark:hover:text-zinc-200 dark:hover:bg-zinc-700">
                         <x-heroicon-o-briefcase class="w-5 h-5"/>    
                         
                         <span class="ml-4">Clients</span>
@@ -13,7 +13,7 @@
                 <li class="relative">
                     <span class="absolute inset-y-0 w-1 bg-orange-600 rounded-tr rounded-br"></span>
 
-                    <a href="{{ route('users.index') }}" class="block flex items-center px-6 py-3 text-gray-800 hover:bg-gray-100 dark:text-zinc-200 dark:hover:bg-zinc-700">
+                    <a href="{{ route('users.index') }}" class="block flex items-center px-4 py-3 mx-2 rounded-md text-gray-800 hover:bg-gray-100 dark:text-zinc-200 dark:hover:bg-zinc-700">
                         <x-heroicon-o-users class="w-5 h-5"/>    
                         
                         <span class="ml-4">Users</span>
@@ -36,7 +36,7 @@
         <nav class="mt-4 text-sm font-semibold text-gray-500 dark:text-zinc-400">
             <ul>
                 <li>
-                    <a href="#" class="block flex items-center px-6 py-3 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-zinc-200 dark:hover:bg-zinc-700">
+                    <a href="#" class="block flex items-center px-4 py-3 mx-2 rounded-md hover:text-gray-800 hover:bg-gray-100 dark:hover:text-zinc-200 dark:hover:bg-zinc-700">
                         <x-heroicon-o-briefcase class="w-5 h-5"/>    
                         
                         <span class="ml-4">Clients</span>
@@ -45,7 +45,7 @@
                 <li class="relative">
                     <span class="absolute inset-y-0 w-1 bg-orange-600 rounded-tr rounded-br"></span>
 
-                    <a href="{{ route('users.index') }}" class="block flex items-center px-6 py-3 text-gray-800 hover:bg-gray-100 dark:text-zinc-200 dark:hover:bg-zinc-700">
+                    <a href="{{ route('users.index') }}" class="block flex items-center px-4 py-3 mx-2 rounded-md text-gray-800 hover:bg-gray-100 dark:text-zinc-200 dark:hover:bg-zinc-700">
                         <x-heroicon-o-users class="w-5 h-5"/>    
                         
                         <span class="ml-4">Users</span>
