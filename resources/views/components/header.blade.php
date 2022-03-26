@@ -7,12 +7,8 @@
         <ul class="w-20 flex justify-between items-center">
             <li class="w-6 h-6">
                 <button @click="toggleTheme()" class="hover:text-gray-800 dark:hover:text-zinc-200">
-                    <template x-if="! darkTheme">
-                        <x-heroicon-o-moon class="w-full h-full" />
-                    </template>
-                    <template x-if="darkTheme">
-                        <x-heroicon-o-sun class="w-full h-full" />
-                    </template>
+                    <x-heroicon-o-moon x-show="! darkTheme" class="w-full h-full" />
+                    <x-heroicon-o-sun x-show="darkTheme" class="w-full h-full" />
                 </button>
             </li>
             <li class="relative">
