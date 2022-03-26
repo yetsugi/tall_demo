@@ -8,6 +8,12 @@
             <main class="mt-6">
                 <h1 class="text-xl font-semibold">Login</h1>
 
+                @if ($errors->any())
+                    <div class="mt-4">
+                        <x-alert type="danger" message="Email/password is incorrect." />
+                    </div>
+                @endif
+
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
                     <label class="block mt-4 text-sm">
