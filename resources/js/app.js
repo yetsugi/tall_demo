@@ -34,6 +34,11 @@ document.addEventListener('alpine:init', () => {
             }
         },
 
+        setTheme(type) {
+            this.theme = type
+            this.themeMenuOpen = false
+        },
+
         toggleProfileMenu() { this.profileMenuOpen = ! this.profileMenuOpen },
 
         toggleThemeMenu() { this.themeMenuOpen = ! this.themeMenuOpen },

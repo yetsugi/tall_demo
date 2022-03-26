@@ -11,9 +11,9 @@
                     <x-heroicon-o-sun x-show="themeColors == 'light'" class="w-full h-full" />
                 </button>
                 <x-dropdown-menu x-show="themeMenuOpen" @click.outside="themeMenuOpen = false">
-                    <x-dropdown-menu-item icon="desktop-computer" text="System" @click="theme='system'" ::class="{ 'bg-gray-100 text-gray-800 dark:bg-zinc-800 dark:text-zinc-100': theme == 'system' }" />
-                    <x-dropdown-menu-item icon="sun" text="Light" @click="theme='light'" ::class="{ 'bg-gray-100 text-gray-800 dark:bg-zinc-800 dark:text-zinc-100': theme == 'light' }" />
-                    <x-dropdown-menu-item icon="moon" text="Dark" @click="theme='dark'" ::class="{ 'bg-gray-100 text-gray-800 dark:bg-zinc-800 dark:text-zinc-100': theme == 'dark' }" />
+                    <x-dropdown-menu-item icon="desktop-computer" text="System" @click="setTheme('system')" ::class="{ 'bg-gray-100 text-gray-800 dark:bg-zinc-800 dark:text-zinc-100': theme == 'system' }" />
+                    <x-dropdown-menu-item icon="sun" text="Light" @click="setTheme('light')" ::class="{ 'bg-gray-100 text-gray-800 dark:bg-zinc-800 dark:text-zinc-100': theme == 'light' }" />
+                    <x-dropdown-menu-item icon="moon" text="Dark" @click="setTheme('dark')" ::class="{ 'bg-gray-100 text-gray-800 dark:bg-zinc-800 dark:text-zinc-100': theme == 'dark' }" />
                 </x-dropdown-menu>
             </li>
             <li class="relative">
