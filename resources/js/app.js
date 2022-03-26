@@ -7,20 +7,36 @@ document.addEventListener('alpine:init', () => {
         sidebarOpen: false,
 
         profileMenuOpen: false,
-     
-        get darkTheme() {
-            if ('darkTheme' in localStorage) {
-                return JSON.parse(localStorage.getItem('darkTheme'));
+
+        themeMenuOpen: false,
+
+        get theme() {
+            if ('theme' in localStorage) {
+                return localStorage.getItem('theme')
             }
 
-            return window.matchMedia('(prefers-color-scheme: dark)').matches;
+            return 'system'
         },
 
-        set darkTheme(enabled) { localStorage.setItem('darkTheme', enabled) },
+        get themeColors() {
+            if (this.theme == 'system') {
+                return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+
+            return this.theme
+        },
+
+        set theme(type) {
+            if (type == 'system') {
+                localStorage.removeItem('theme')
+            } else {
+                localStorage.setItem('theme', type)
+            }
+        },
 
         toggleProfileMenu() { this.profileMenuOpen = ! this.profileMenuOpen },
-        
-        toggleTheme() { this.darkTheme = ! this.darkTheme }
+
+        toggleThemeMenu() { this.themeMenuOpen = ! this.themeMenuOpen },
     }))
 })
  

@@ -11,7 +11,7 @@
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     </head>
     <body>
-        <div x-data="app" :class="{ 'dark': darkTheme }">
+        <div x-data="app" :class="{ 'dark': themeColors == 'dark' }">
             {{ $slot }}
         </div>
 
