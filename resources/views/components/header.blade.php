@@ -17,7 +17,7 @@
                 </x-dropdown-menu>
             </li>
             <li class="relative">
-                <button @click="toggleProfileMenu()" class="w-8 h-8 bg-gray-400 text-white rounded dark:bg-zinc-600">A</button>
+                <button @click="toggleProfileMenu()" class="w-8 h-8 bg-gray-400 text-white rounded dark:bg-zinc-600">{{ auth()->user()->initials }}</button>
                 <x-dropdown-menu x-show="profileMenuOpen" @click.outside="profileMenuOpen = false" class="mt-2">
                     <li>
                         <form method="POST" action="{{ route('logout') }}">
